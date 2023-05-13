@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Image Generator</title>
+</head>
+<body>
+    <h1>Cat Image Generator</h1>
+    {% if flask.image %}
+        <img src="{{ flask.image }}" alt="Cat image">
+    {% else %}
+        <p>No cat images found.</p>
+    {% endif %}
+</body>
+</html>
+
